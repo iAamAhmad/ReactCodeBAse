@@ -1,0 +1,130 @@
+#root,
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  flex-direction: column;
+  background: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(117, 19, 93, 0.73)
+    ),
+    url("https://mediaim.expedia.com/destination/1/efe51a30ce2e3780273fb419a1220548.jpg");
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 45%;
+  height: auto;
+  background: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
+  color: black;
+  margin: 2px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Spartan", serif;
+}
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 55px;
+  width: 170px;
+  opacity: 1;
+  background-color: white;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.button span {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+.btn__con {
+  margin-top: 12px;
+}
+
+.button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+.button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    height: 30%;
+  }
+}

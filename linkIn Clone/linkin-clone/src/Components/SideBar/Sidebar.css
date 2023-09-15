@@ -1,0 +1,87 @@
+.avatar_sidebar {
+  margin-bottom: 10px;
+}
+.sidebar_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
+  border-bottom: 0;
+  border: 1px solid lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+.sidebar {
+  top: 80px;
+  position: sticky;
+  flex: 0.2;
+  text-align: center;
+  height: fit-content;
+}
+.sidebar_top > img {
+  margin-bottom: -20px;
+  width: 100%;
+  height: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.sidebar_stat {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 10px;
+}
+.sidebar_stat > p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: gray;
+}
+.sidebar_number {
+  font-weight: bold;
+  color: #47dff3;
+}
+.sidebar_stats {
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+}
+.button_button {
+  text-align: left;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+}
+.button_button_text {
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+}
+.sidebar_recentItem {
+  font-weight: bolder;
+  font-size: 13px;
+  color: grey;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.sidebar_recentItem:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+}
+.span_hash {
+  margin-right: 10px;
+  margin-left: 5px;
+}

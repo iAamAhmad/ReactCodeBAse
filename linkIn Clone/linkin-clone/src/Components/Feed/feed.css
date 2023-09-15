@@ -1,0 +1,5 @@
+.feedBar_feed {
+  display: flex;
+  flex: 0.6;
+  flex-direction: row;
+}
