@@ -1,13 +1,43 @@
-import React from "react";
-import FirstComponent from "./componenets/FirstComponent";
-
-function App() {
+import React from 'react';
+import './styles/app.css'
+import Profile from './componenets/FirstComponent';
+import SecondComponent from './componenets/SecondComponent';
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello from React</h1>
-      <FirstComponent />
+    <div className='big__div'>
+      <div>
+        <SecondComponent />
+      </div>
+
+      <div className='child__div'>
+        <Profile />
+        <Profile />
+        <Profile />
+      </div>
+      <div className='child__div'>
+        <Profile />
+        <Profile />
+        <Profile />
+      </div>
+      <div className='child__div'>
+        <Profile />
+        <Profile />
+        <Profile />
+      </div><div className='child__div'>
+        <Profile />
+        <Profile />
+        <Profile />
+      </div><div className='child__div'>
+        <Profile />
+        <Profile />
+        <Profile />
+      </div>
+
+
+
+
     </div>
-  );
+  )
 }
 
 export default App;

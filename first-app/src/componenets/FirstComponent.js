@@ -1,9 +1,9 @@
-import React from 'react'
-
-function FirstComponent() {
+function Profile() {
   return (
-    <div>FirstComponent</div>
-  )
+    <img
+      src="https://i.imgur.com/MK3eW3As.jpg"
+      alt="Katherine Johnson"
+    />
+  );
 }
-
-export default FirstComponent
+export default Profile

@@ -1,0 +1,9 @@
+.big__div {
+  display: flex;
+  flex-direction: column;
+}
+.child__div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
