@@ -25,6 +25,8 @@ function SecondComponent() {
          {/* calling third component here */}
          <div>
             <ThirdComponent title="Third Component" />
+            <ThirdComponent title="Third Component" />
+
          </div>
       </div>
    );
