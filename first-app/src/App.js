@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className='big__div'>
       <div>
-        <SecondComponent />
+        <SecondComponent /> 
       </div>
     </div>
   )
