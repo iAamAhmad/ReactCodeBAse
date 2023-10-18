@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/app.css'
-import ThirdComponent from './ThirdComponent';
-import Button from './Button';
-import ForthComponent from './ForthComponent';
+import { useNavigate } from "react-router-dom"
 
 function SecondComponent() {
    const [count, setCount] = useState(0);
+   const navigate = useNavigate();
    const increment = () => {
       setCount(count + 1);
    }
@@ -21,17 +19,23 @@ function SecondComponent() {
          <h1 className="title">Counter App and I am Second Component</h1>
          <p className="count">Count: {count}</p>
          <div className="button-container">
-            <button className="increment" onClick={increment}>Increment</button>
-            <button className="decrement" onClick={decrement}>Decrement</button>
+            <button
+               className="p-4 bg-slate-500 mx-3 rounded-3xl text-white"
+               onClick={increment}>
+               Increment
+            </button>
+            <button
+               className="p-4 bg-slate-700 mx-3 rounded-3xl text-white"
+               onClick={decrement}>
+               Decrement
+            </button>
          </div>
-
-         {/* calling third component here */}
-         <div>
-            <ThirdComponent title="Third Component" />
-            <ThirdComponent title="Third Component" />
-            <Button text="Sign Up" />
-            <ForthComponent name="Jawad" age={18} />
-
+         <div className='m-6'>
+            <button
+               className="p-4 bg-slate-700 mx-3 rounded-3xl text-white"
+               onClick={() => navigate('/')}>
+               Go Back
+            </button>
          </div>
       </div>
    );

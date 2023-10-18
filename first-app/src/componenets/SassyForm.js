@@ -6,7 +6,7 @@ function FoodOrderForm() {
    const [address, setAddress] = useState("");
    const [order, setOrder] = useState("");
 
-   const handleSubmit = ($event) => {
+   const handleSubmit = (event) => {
       event.preventDefault();
       alert(`
       Order Successful!
