@@ -1,9 +1,8 @@
-function Profile() {
+function FirstComponent() {
   return (
-    <img
-      src="https://i.imgur.com/MK3eW3As.jpg"
-      alt="Katherine Johnson"
-    />
+    <div>
+      <h1>Hello from First</h1>
+    </div>
   );
 }
-export default Profile
+export default FirstComponent
