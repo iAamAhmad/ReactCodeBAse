@@ -18,7 +18,7 @@ function ButtonClickExample() {
 
   useEffect(() => {
     determineSuccessMessage();
-  }, []);
+  },[]);
 
   return (
     <div>
